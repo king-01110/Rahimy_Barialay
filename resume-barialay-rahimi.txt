@@ -1,0 +1,14 @@
+Barialay Rahimi
+Senior Full Stack Software Engineer
+
+Email: RahimyBarialay@gmail.com
+Phone: +93 781 783 777
+Location: Kabul, Afghanistan
+Education: Kabul University
+Experience: 4+ Years
+
+Technical Skills:
+- Laravel, PHP, ASP.NET Core, Node.js
+- React, TypeScript, Tailwind CSS, Next.js
+- MySQL, PostgreSQL, SQL Server, SQLite
+- AWS, Docker, CI/CD, Nginx, Apache

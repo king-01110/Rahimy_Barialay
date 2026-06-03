@@ -181,9 +181,9 @@ export function HomePage() {
           ...category,
           title:
             category.title === 'Backend Development'
-              ? 'بیکنډ پراختیا'
+              ? 'بک اېنډ پراختیا'
               : category.title === 'Frontend Development'
-                ? 'فرنټنډ پراختیا'
+                ? 'فرانټ اېنډ پراختیا'
                 : 'ډیټابیس او ډیواپس',
         }))
       : skillCategories
@@ -194,13 +194,13 @@ export function HomePage() {
           ...project,
           name:
             project.name === 'Road Construction Management System'
-              ? 'د سړک جوړونې مدیریت سیستم'
+              ? 'د سړک جوړونې مدیریتي سیستم'
               : project.name === 'School Management Information System'
-                ? 'د ښوونځي مدیریت معلوماتي سیستم'
+                ? 'د ښوونځۍ مدیریتي معلوماتي سیستم'
                 : project.name === 'Pharmacy Management System'
-                  ? 'د درملتون مدیریت سیستم'
+                  ? 'د درملتون مدیریتي سیستم'
                   : project.name === 'Human Resource Management System'
-                    ? 'د بشري منابعو مدیریت سیستم'
+                    ? 'د بشري سرچینو مدیریتي سیستم'
                     : project.name === 'Vehicle Registration System'
                       ? 'د وسایطو د ثبت سیستم'
                       : 'د توکو مدیریت سیستم',
@@ -208,13 +208,13 @@ export function HomePage() {
             project.name === 'Road Construction Management System'
               ? 'د پروژې پلان جوړونه، بودیجه، پرمختګ څارنه او اجرائیوي راپورونه.'
               : project.name === 'School Management Information System'
-                ? 'د زده کوونکو مدیریت، حاضري، ازموینې او رول-محوره راپورونه.'
+                ? 'د زده کوونکو مدیریت، سوبتیا(حاضري)، ازموینې او رول-محوره راپورونه.'
                 : project.name === 'Pharmacy Management System'
                   ? 'د موجودۍ کنټرول، خرڅلاو، پېر او مالي تحلیلونه.'
                   : project.name === 'Human Resource Management System'
-                    ? 'د کارکوونکو مدیریت، معاش، حاضري او رخصتي پروسې.'
+                    ? 'د کارکوونکو مدیریت، معاش، سوبتیا(حاضري) او رخصتۍ پروسې.'
                     : project.name === 'Vehicle Registration System'
-                      ? 'د ثبت او تصدیق جریانونه له راپور ورکولو سره.'
+                      ? 'د ثبت او تصدیق خوځښتونه له راپور ورکولو سره.'
                       : 'د سټاک کنټرول، د پېر پروسه، او د شتمنیو تعقیب.',
         }))
       : projects

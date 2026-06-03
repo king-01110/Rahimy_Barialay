@@ -39,10 +39,10 @@ export const projects = [
 
 export const stats = [
   { label: 'Years Experience', value: 4, suffix: '+' },
-  { label: 'Projects Completed', value: 50, suffix: '+' },
-  { label: 'Happy Clients', value: 30, suffix: '+' },
+  { label: 'Projects Completed', value: 25, suffix: '+' },
+  { label: 'Happy Clients', value: 15, suffix: '+' },
   { label: 'Technologies Mastered', value: 15, suffix: '+' },
-  { label: 'Development Hours', value: 7000, suffix: '+' },
+  { label: 'Development Hours', value: 5000, suffix: '+' },
 ]
 
 export const services = [
@@ -69,7 +69,7 @@ export const skillCategories = [
       'React.js',
       'TypeScript',
       'JavaScript (ES6+)',
-      'Tailwind CSS',
+      'Vuejs',
       'Material UI',
       'Next.js',
     ],

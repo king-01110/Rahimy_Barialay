@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# Barialay Rahimi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for **Barialay Rahimi**, Senior Full Stack Software Engineer. Showcases experience, projects, skills, and contact details with a modern, responsive UI.
 
-Currently, two official plugins are available:
+**Live site:** [https://king-01110.github.io/Rahimy_Barialay/](https://king-01110.github.io/Rahimy_Barialay/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Responsive single-page layout with smooth scroll navigation
+- **English** and **Pashto** language support
+- Light / dark theme toggle
+- Animated hero, stats, skills, projects, and contact sections
+- Downloadable resume (`public/resume-barialay-rahimi.txt`)
+- Blog route (`/blog`)
+- SEO meta tags and structured data (JSON-LD)
+- PWA support (installable, offline-friendly assets)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+| Layer | Tools |
+| --- | --- |
+| UI | React 19, TypeScript, Tailwind CSS 4, Framer Motion |
+| Routing | React Router 7 |
+| Build | Vite 8 |
+| Deploy | GitHub Pages (`gh-pages` branch) |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- [Node.js](https://nodejs.org/) 20+ (recommended)
+- npm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Install and run locally
+
+```bash
+git clone https://github.com/king-01110/Rahimy_Barialay.git
+cd Rahimy_Barialay
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Other scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command | Description |
+| --- | --- |
+| `npm run build` | Type-check and build to `dist/` (includes `404.html` for GitHub Pages SPA routing) |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run deploy` | Build and publish `dist/` to the `gh-pages` branch |
+
+## Deploy to GitHub Pages
+
+This project is configured for a **project site** at `https://<username>.github.io/<repo>/`.
+
+1. Ensure the repo name matches the Vite `base` path in `vite.config.ts` (currently `/Rahimy_Barialay/`).
+2. In GitHub: **Settings → Pages → Build and deployment → Branch:** `gh-pages` / `(root)`.
+3. Deploy from your machine:
+
+```bash
+npm run deploy
 ```
+
+4. Visit **https://king-01110.github.io/Rahimy_Barialay/** (use this exact URL; `/rahimy-barialay/` is not valid).
+
+If assets fail to load after a deploy, hard-refresh the page (**Ctrl+Shift+R**) or clear site data for `king-01110.github.io` to drop an old service worker or cached `index.html`.
+
+### Changing the repo name
+
+If you rename the repository, update both:
+
+- `base` in `vite.config.ts`
+- `basename` in `src/main.tsx` (derived from `import.meta.env.BASE_URL` at build time)
+
+Then run `npm run deploy` again.
+
+## Project structure
+
+```
+├── public/              # Static assets (profile, resume, icons)
+├── scripts/
+│   └── copy-404.mjs     # Copies index.html → 404.html for GitHub Pages
+├── src/
+│   ├── components/ui/   # Reusable UI primitives
+│   ├── data/            # Portfolio content (projects, skills, stats)
+│   ├── pages/           # Home and blog pages
+│   └── providers/       # Theme and language context
+├── index.html
+└── vite.config.ts
+```
+
+## Contact
+
+- **Email:** RahimyBarialay@gmail.com
+- **Phone:** +93 781 783 777
+- **Location:** Kabul, Afghanistan
+
+## License
+
+Private portfolio project. All rights reserved unless otherwise noted.

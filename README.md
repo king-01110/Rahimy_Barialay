@@ -4,19 +4,6 @@ Personal portfolio site for **Barialay Rahimi**, Senior Full Stack Software Engi
 
 **Live site:** [https://king-01110.github.io/Rahimy_Barialay/](https://king-01110.github.io/Rahimy_Barialay/)
 
-## Features
-
-- Responsive single-page layout with smooth scroll navigation
-- **English** and **Pashto** language support
-- Light / dark theme toggle
-- Animated hero, stats, skills, projects, and contact sections
-- Downloadable resume (`public/resume-barialay-rahimi.txt`)
-- Blog route (`/blog`)
-- SEO meta tags and structured data (JSON-LD)
-- PWA support (installable, offline-friendly assets)
-
-## Tech stack
-
 | Layer | Tools |
 | --- | --- |
 | UI | React 19, TypeScript, Tailwind CSS 4, Framer Motion |
@@ -100,3 +87,5 @@ Then run `npm run deploy` again.
 ## License
 
 Private portfolio project. All rights reserved unless otherwise noted.
+
+      

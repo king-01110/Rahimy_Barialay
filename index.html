@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./icons.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barialay Rahimi | Senior Full Stack Software Engineer</title>
     <meta
@@ -16,14 +16,14 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://barialay-rahimi.dev" />
-    <meta property="og:image" content="/og-cover.svg" />
+    <meta property="og:image" content="./og-cover.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Barialay Rahimi Portfolio" />
     <meta
       name="twitter:description"
       content="Senior Full Stack Software Engineer | 4+ years professional experience."
     />
-    <meta name="twitter:image" content="/og-cover.svg" />
+    <meta name="twitter:image" content="./og-cover.svg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -42,6 +42,17 @@
     </script>
   </head>
   <body>
+    <script>
+      // One-time cleanup after base path change (old /rahimy-barialay/ deploy)
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((regs) => {
+          regs.forEach((r) => r.unregister())
+        })
+        if ('caches' in window) {
+          caches.keys().then((keys) => keys.forEach((k) => caches.delete(k)))
+        }
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

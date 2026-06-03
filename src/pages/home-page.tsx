@@ -56,6 +56,9 @@ import { projects, skillCategories, stats } from '../data/portfolio'
 import { useTheme } from '../providers/theme-provider'
 import { useLanguage } from '../providers/language-provider'
 
+const publicAsset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
 const technologyIcons: Record<string, IconType> = {
   Laravel: SiLaravel,
   PHP: SiPhp,
@@ -373,7 +376,7 @@ export function HomePage() {
             </p>
             <p className="mt-4 text-slate-600 dark:text-slate-300">{t('heroSubtitle')}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="/resume-barialay-rahimi.txt" download>
+              <a href={publicAsset('resume-barialay-rahimi.txt')} download>
                 <Button>
                   <FaDownload className="mr-2" /> {t('ctaResume')}
                 </Button>
@@ -404,7 +407,7 @@ export function HomePage() {
           >
             <Card className="overflow-hidden border-cyan-400/20 p-0">
               <img
-                src="/profile.svg"
+                src={publicAsset('profile.svg')}
                 alt="Barialay Rahimi profile"
                 className="h-[360px] w-full object-cover md:h-[420px]"
               />

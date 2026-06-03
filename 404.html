@@ -44,6 +44,17 @@
     <link rel="stylesheet" crossorigin href="/Rahimy_Barialay/assets/index-De299mj7.css">
   <link rel="manifest" href="/Rahimy_Barialay/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/Rahimy_Barialay/registerSW.js"></script></head>
   <body>
+    <script>
+      // One-time cleanup after base path change (old /rahimy-barialay/ deploy)
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((regs) => {
+          regs.forEach((r) => r.unregister())
+        })
+        if ('caches' in window) {
+          caches.keys().then((keys) => keys.forEach((k) => caches.delete(k)))
+        }
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>

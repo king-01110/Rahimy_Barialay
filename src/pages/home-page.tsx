@@ -55,6 +55,7 @@ import { Card } from '../components/ui/card'
 import { projects, skillCategories, stats } from '../data/portfolio'
 import { useTheme } from '../providers/theme-provider'
 import { useLanguage } from '../providers/language-provider'
+import profilePhoto from '../assets/profile.jpeg'
 
 const publicAsset = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
@@ -407,9 +408,9 @@ export function HomePage() {
           >
             <Card className="overflow-hidden border-cyan-400/20 p-0">
               <img
-                src={publicAsset('profile.jpeg')}
+                src={profilePhoto}
                 alt="Barialay Rahimi profile"
-                className="h-[360px] w-full object-cover md:h-[420px]"
+                className="h-[360px] w-full object-cover object-top md:h-[420px]"
               />
             </Card>
           </motion.div>

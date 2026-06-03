@@ -407,7 +407,7 @@ export function HomePage() {
           >
             <Card className="overflow-hidden border-cyan-400/20 p-0">
               <img
-                src={publicAsset('profile.svg')}
+                src={publicAsset('profile.jpeg')}
                 alt="Barialay Rahimi profile"
                 className="h-[360px] w-full object-cover md:h-[420px]"
               />

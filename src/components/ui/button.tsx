@@ -15,9 +15,9 @@ const buttonVariants = cva(
           'text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-white/10',
       },
       size: {
-        default: 'h-11 px-6',
-        sm: 'h-9 px-4 text-sm',
-        lg: 'h-12 px-8',
+        default: 'h-11 min-h-11 px-5 text-sm sm:px-6 sm:text-base',
+        sm: 'h-9 min-h-9 px-3 text-sm sm:px-4',
+        lg: 'h-12 min-h-12 px-6 text-base sm:px-8',
       },
     },
     defaultVariants: {

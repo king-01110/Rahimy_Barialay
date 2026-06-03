@@ -23,22 +23,29 @@ export function BlogPage() {
   return (
     <div
       dir={language === 'ps' ? 'rtl' : 'ltr'}
-      className="min-h-screen bg-[radial-gradient(circle_at_top,#dbeafe_0%,#f8fafc_45%,#eef2ff_100%)] px-4 py-10 text-slate-900 dark:bg-[radial-gradient(circle_at_top,#111827_0%,#020617_45%,#0b1120_100%)] dark:text-slate-100"
+      className="min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top,#dbeafe_0%,#f8fafc_45%,#eef2ff_100%)] px-3 py-8 text-slate-900 sm:px-5 sm:py-10 md:px-6 dark:bg-[radial-gradient(circle_at_top,#111827_0%,#020617_45%,#0b1120_100%)] dark:text-slate-100"
     >
       <Helmet>
         <title>Blog | Barialay Rahimi</title>
         <meta name="description" content="Engineering blog by Barialay Rahimi." />
       </Helmet>
-      <div className="mx-auto max-w-4xl">
-        <Link to="/" className="text-cyan-600 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-200">
+      <div className="mx-auto w-full max-w-4xl min-w-0">
+        <Link
+          to="/"
+          className="inline-flex items-center text-sm text-cyan-600 hover:text-cyan-500 sm:text-base dark:text-cyan-300 dark:hover:text-cyan-200"
+        >
           ← {t('blogBack')}
         </Link>
-        <h1 className="mt-4 text-4xl font-bold">{t('blogTitle')}</h1>
-        <div className="mt-8 grid gap-4">
+        <h1 className="mt-4 text-2xl font-bold leading-tight sm:text-3xl md:text-4xl">
+          {t('blogTitle')}
+        </h1>
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:gap-5">
           {posts.map((post) => (
             <Card key={post.title}>
-              <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="mt-2 text-slate-600 dark:text-slate-300">{post.excerpt}</p>
+              <h2 className="text-lg font-semibold leading-snug sm:text-xl">{post.title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
+                {post.excerpt}
+              </p>
             </Card>
           ))}
         </div>

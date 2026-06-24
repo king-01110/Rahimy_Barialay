@@ -5,8 +5,7 @@ Personal portfolio site for **Barialay Rahimi**, Senior Full Stack Software Engi
 **Live site:** [https://king-01110.github.io/Rahimy_Barialay/](https://king-01110.github.io/Rahimy_Barialay/)
 
 | Layer | Tools |
-| --- | --- |
-| UI | React 19, TypeScript, Tailwind CSS 4, Framer Motion |
+| --- | --- |||| UI | React 19, TypeScript, Tailwind CSS 4, Framer Motion |
 | Routing | React Router 7 |
 | Build | Vite 8 |
 | Deploy | GitHub Pages (`gh-pages` branch) |

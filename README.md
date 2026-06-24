@@ -82,7 +82,7 @@ Then run `npm run deploy` again.
 
 - **Email:** RahimyBarialay@gmail.com
 - **Phone:** +93 781 783 777
-- **Location:** Kabul, Afghanistan
+- **Location:** Kabul, Afghanistan.
 
 ## License
 

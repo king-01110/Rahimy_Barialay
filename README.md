@@ -46,7 +46,7 @@ This project is configured for a **project site** at `https://<username>.github.
 3. Deploy from your machine:
 
 ```bash
-npm run deploy
+npm run deplo
 ```
 
 4. Visit **https://king-01110.github.io/Rahimy_Barialay/** (use this exact URL; `/rahimy-barialay/` is not valid).
